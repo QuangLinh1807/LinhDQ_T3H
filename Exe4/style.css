@@ -1,6 +1,6 @@
 html {
     font-size: 15px !important;
-    
+    font-family: 'Poppins', sans-serif !important;
 }
 
 body {
@@ -10,10 +10,16 @@ body {
 span{
     font-weight: 300;
 }
+a{
+    text-decoration: none !important;
+}
+a:hover {
+    text-decoration: none !important;
+    color: red !important;
+}
 
-
-/* header */
-header{
+/* footer */
+.footer__adderr{
     background-color: #efefef;
     font-weight: bold;
     height: 180px;
@@ -23,7 +29,7 @@ header{
 .carousel{
     display: inline-flex;
 }
-.header-title{
+.footer-title{
     padding-left: 10%;
     padding-top: 20px;
     font-weight: 700;
@@ -50,7 +56,7 @@ ul{
     margin-right: 10%;
 }
 
-.header__navbar-item--separate::after{
+.footer__navbar-item--separate::after{
     content: "";
     display: block;
     position: absolute;
@@ -84,7 +90,7 @@ li a{
 .hd-overflow-2:first-child{
     margin-left: 10%;
 }
-.header-title2{
+.footer-title2{
     padding-top: 30px;
     font-weight: 700;
     font-size: 16px;
@@ -93,7 +99,7 @@ li a{
 .hd-overflow-3{
     width: 35%;
 }
-.header-title4{
+.footer-title4{
     font-weight: 700;
     font-size: 16px;
     color: #3b466f;
@@ -156,7 +162,7 @@ li a{
     border-left: 2px solid #6f7779;
     height: 15px;
     right: -10px;
-    top: 15%;
+    top: 20%;
     transform: translateY(-50%);
 }
 .footer-license{
@@ -166,7 +172,8 @@ li a{
     text-align: center;
     font-weight: 600;
     font-size: 15px;
-    padding-top: 15px
+    padding-top: 15px;
+    position: fixed;
 }
 .footer-license span{
     color: red;
