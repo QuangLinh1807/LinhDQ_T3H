@@ -58,14 +58,15 @@ select{
     /* background-color: #0079fa;
     border: 1px solid #0079fa; */
 }
-/* .button-submit2{
+.button-submit2{
     border: 1px solid #0079fa;
     width: 80px;
     height: 30px;
+    color: #fff;
     text-align: center;
     background-color: #0079fa;
     border-radius: 3px;
-} */
+}
 .input-invalid{
     border: 1px solid red;
 }
