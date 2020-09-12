@@ -11,51 +11,64 @@
 
 <body>
     <div class="container">
-        <form class="form">
+        <form class="form" id="myForm">
             <div>
                 <div class="col-6">
                     <label for="femail">Email:</label><br>
-                    <input class="input-email" type="email">
+                    <input id="email" class="myclass input-email" type="email" onchange="checkFormatEmail(this)"
+                        onkeyup="checkMaxLengthEmail(this,40,'Email không được quá 40 ký tự')"><br />
+                    <P class="msg-error display-none" for="email" id="p-email">Yêu cầu nhập Email</P><br />
                 </div>
                 <div class="col-6">
                     <label for="fpassword">Password:</label><br>
-                    <input class="input-password" type="password"><br>
+                    <input id="password" class="myclass input-password" type="password" 
+                        onchange="checkMaxLengthPassword(this, 8, 16)" ><br>
+                    <P class="msg-error display-none" for="password" id="p-password">Yêu cầu nhập Password</P><br />
                 </div>
             </div>
-            <label for="faddress">Address:</label><br>
-            <input class="input-address" type="text" placeholder="1234 Main St"><br>
 
+            <label for="faddress">Address:</label><br>
+            <input id="address1" class="myclass input-address" type="text" placeholder="1234 Main St"
+                onchange="validate()"><br>
+            <p class="msg-error display-none" for="address1" id="p-address1">Yêu cầu nhập lại address1</p><br />
             <label for="faddress2">Address 2:</label><br>
-            <input class="input-address" type="text" placeholder="Agerment, studio or floor"><br>
+            <input id="address2" class="myclass input-address" type="text" placeholder="Agerment, studio or floor"
+                onchange="validate()"><br>
+            <P class="msg-error display-none" for="address2" id="p-address2">Yêu cầu nhập lại address2</P><br />
+
             <div>
                 <div class="col-6">
                     <label for="fcity">City:</label><br>
-                    <input class="input-city" type="text"><br>
+                    <input id="city" class="myclass input-city" type="text" onchange="validate()"><br>
+                    <P class="msg-error display-none" for="city" id="p-city">Yêu cầu nhập lại city</P><br />
                 </div>
                 <div class="col-4">
-                    <label for="fcity">State:</label><br>
-                    <select name="cars">
+                    <label for="fstate">State:</label><br>
+                    <select id="state" name="cars" onchange="validate()">
                         <option disabled>Choose...</option>
-                        <option>Manager</option>
-                        <option>Junio</option>
-                        <option>Fresher</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
                     </select><br>
                 </div>
                 <div class="col-2">
                     <label for="fzip">Zip:</label><br>
-                    <input class="input-zip" type="text"><br>
+                    <input id="zip" class="myclass input-zip" type="number" onchange="checkMaxLengthZip(this, 1000, 5000)"><br>
+                    <P class="msg-error display-none" for="zip" id="p-zip"></P><br />
                 </div>
             </div>
 
             <div class="input-checkbox">
-                <input type="checkbox" id="fcheckbox" name="fradio">
+                <input id="checkbox" type="checkbox" id="fcheckbox" name="fradio">
                 <label for="fcheckbox">Check me out</label>
             </div>
-            <div class="buttom-submit2">
-                <a href="../Exe1/exe1.html" class="submit2">Sign in</a>
+
+            <div class="button-submit2">
+                <!-- <button id="sign-in-btn" onclick="signin()">Sign in</button> -->
+                <input type="button" onclick="signin()" value="Sign in" />
             </div>
-        </form>
+        </from>
     </div>
 </body>
+<script src="./ex2.js"></script>
 
 </html>
