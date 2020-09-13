@@ -9,6 +9,7 @@ function productSearch() {
             msg_error.innerHTML = '';
             msg_error.classList.add("display-none");
         } else {
+            debugger;
             msg_error.classList.remove("display-none");
         }
         return $(this).text().toLowerCase().trim().indexOf(input) == -1;
