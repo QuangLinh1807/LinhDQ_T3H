@@ -21,7 +21,7 @@
                 </div>
                 <div class="col-6">
                     <label for="fpassword">Password:</label><br>
-                    <input id="password" class="myclass input-password" type="password" 
+                    <input id="password" class="myclass input-password" type="password"
                         onchange="checkMaxLengthPassword(this, 8, 16)"><br>
                     <p class="msg-error display-none" for="password" id="p-password">Yêu cầu nhập password</p><br />
                 </div>
@@ -52,8 +52,9 @@
                 </div>
                 <div class="col-2">
                     <label for="fzip">Zip:</label><br>
-                    <input id="zip" class="myclass input-zip" type="number" onchange="checkMaxLengthZip(this, 1000, 5000)"><br>
-                    <p class="msg-error display-none" for="zip" id="p-zip"></p><br />
+                    <input id="zip" class="myclass input-zip" type="number"
+                        onchange="checkMaxLengthZip(this, 1000, 5000)"><br>
+                    <p class="msg-error display-none" for="zip" id="p-zip">Yêu cầu nhập Zip</p><br />
                 </div>
             </div>
 
@@ -66,7 +67,7 @@
                 <!-- <button id="sign-in-btn" onclick="signin()">Sign in</button> -->
                 <input class="button-submit2" type="button" onclick="signin()" value="Sign in" />
             </div>
-        </from>
+            </from>
     </div>
 </body>
 <script src="./ex2.js"></script>
