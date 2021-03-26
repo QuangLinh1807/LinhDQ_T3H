@@ -1,0 +1,283 @@
+﻿html {
+    font-size: 15px !important;
+}
+
+.ff {
+    font-family: 'Montserrat';
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.align-center {
+    text-align: -webkit-center;
+}
+
+body
+{
+}
+
+/* Navbar */
+.navbar-blog {
+    background-color: #fff !important;
+    border-color: #d9d9d9 !important;
+    min-height: 80px;
+}
+
+    .navbar-blog ul li {
+        font-weight: 500;
+        font-size: 16px;
+        height: 80px;
+        display: table;
+        border-bottom: 4px solid transparent;
+    }
+        .navbar-blog ul li:last-child {
+            display: flex;
+            align-items: center;
+        }
+
+    .navbar-blog ul li:not(:last-child):hover {
+        border-bottom: 4px solid transparent;
+        border-image: linear-gradient(to right, #1366b0 , #16397b);
+        border-image-slice: 1;
+    }
+
+        .navbar-blog ul li a {
+            color: #606161 !important;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+            .navbar-blog ul li a:hover {
+                background: linear-gradient(to right, #1364ae, #163a7d) !important;
+                -webkit-background-clip: text !important;
+                -webkit-text-fill-color: transparent !important;
+            }
+
+        .navbar-blog ul li button {
+            background-color: #fff;
+            border: 1px solid #154f95;
+            border-radius: 8px;
+            width: 185px;
+            height: 35px;
+            color: #1c4792;
+            font-size: 14px;
+        }
+
+            .navbar-blog ul li button:hover {
+                color: #fff;
+                background-color: #154f95;
+            }
+
+            .navbar-blog ul li button:focus {
+                outline: none;
+            }
+
+
+.navbar-mobile {
+    display: none;
+}
+
+/* Blog container */
+.baygolf-blog-container {
+    margin-top: 135px;
+    text-align: center;
+}
+
+.baygolf-blog-search {
+    width: 254px;
+    font-weight: 500;
+    background-color: #ebebeb !important;
+    box-shadow: none !important;
+    border: 1px solid #d9d9d9 !important;
+    height: 35px !important;
+}
+
+    .baygolf-blog-search-btn {
+        background-color: #ebebeb !important;
+        border-left: none !important;
+        border-color: #d9d9d9 !important;
+        height: 35px !important;
+    }
+
+        .baygolf-blog-search-btn:hover {
+            border-color: #d9d9d9 !important;
+        }
+
+        .baygolf-blog-search-btn:focus {
+            outline: none !important;
+        }
+
+.category-list {
+    display: flex;
+    justify-content: center;
+}
+
+    .category-list li {
+        padding: 36px 22px !important
+    }
+
+        .category-list li a {
+            padding: 0 !important;
+            color: #a0a0a0;
+            padding-bottom: 7px !important;
+        }
+
+            .category-list li a:hover, .category-list li.active a {
+                background-color: transparent;
+                background: linear-gradient(to right, #1364ae, #163a7d) !important;
+                -webkit-background-clip: text !important;
+                -webkit-text-fill-color: transparent !important;
+                border-bottom: 5px solid transparent;
+                border-image: linear-gradient(to right, #1366b0, #16397b);
+                border-image-slice: 1;
+            }
+
+            .category-list li a:focus {
+                background-color: transparent !important;
+            }
+
+.flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.blog-box-item {
+    text-align: left;
+    width: 360px;
+    margin-bottom: 40px;
+}
+	
+    .blog-box-item__body a {
+        display: block;
+        font-weight: 600;
+        font-size: 18px;
+        color: #414142;
+        padding: 20px 0;
+    }
+
+        .blog-box-item a:hover {
+            color: #00aced;
+            text-decoration: none;
+        }
+
+.pagination li a {
+    margin-right: 20px;
+    border-radius: 6px;
+    border-color: #154f95 !important;
+    font-weight: 500;
+}
+
+    .pagination li a:hover {
+        background: linear-gradient(#fec10d, #f7931d) !important;
+        color: #fff !important;
+        border-color: #f8981b !important;
+    }
+
+
+/* Footer */
+.footer-area {
+    background: linear-gradient(#16397b, #135fa8);
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 20px;
+}
+
+.footer-area p {
+    margin-bottom: 18px;
+}
+
+.hd-overflow {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#footerSlide {
+    min-height: 170px;
+}
+
+    .footer-area .carousel-indicators {
+        bottom: -30px;
+        left: 0;
+        margin-left: 0;
+        width: auto;
+    }
+
+    .footer-area .carousel-indicators li {
+        background-color: #fff;
+        opacity: 0.8;
+        height: 6px;
+        width: 6px;
+        margin: 0;
+        margin-left: 5px !important;
+    }
+
+        .footer-area .carousel-indicators li.active {
+            opacity: 1;
+        }
+
+    .footer-area .slider-control a {
+        background: linear-gradient(#fec10d, #f7931d);
+        height: 23px;
+        width: 23px;
+        color: #fff;
+        display: inline-block;
+        padding-left: 8px;
+        font-size: 18px;
+        border-radius: 4px;
+    }
+
+    .footer-list {
+        padding-left: 0;
+        list-style-type: none;
+    }
+
+    .footer-list li:not(:last-child) {
+        padding-bottom: 1rem;
+    }
+
+    .footer-list li a {
+        color: #fff;
+    }
+
+        .footer-list li a:hover {
+            text-decoration: none;
+        }
+	
+	.footer-list ~ img {
+		padding-top: 40px;
+	}
+	
+.footer {
+    height: auto;
+    background-color: #414142;
+    color: #fff;
+}
+
+.footer ul li {
+    display: table;
+    height: 61px;
+}
+
+    .footer ul li a {
+        display: table-cell;
+        vertical-align: middle;
+        color: #fff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+        .footer ul li a:hover {
+            background-color: transparent;
+        }
+
+    .footer ul li span {
+        padding-top: 20px !important;
+        display: table-cell;
+        padding-left: 15px;
+    }
